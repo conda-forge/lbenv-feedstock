@@ -1,5 +1,5 @@
 {% set name = "LbEnv" %}
-{% set version = "1.1.4" %}
+{% set version = "1.1.5" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 8cdb708ab693aae9d64fe4162c28080e096b69477d06539b3493abd5e8586f9c
+  sha256: e57b273a1d18671f2681fbf6e4825e5db908cc928eda63918a9496aab313e640
 
 build:
   number: 0
