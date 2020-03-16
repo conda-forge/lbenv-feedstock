@@ -1,13 +1,13 @@
 {% set name = "LbEnv" %}
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 4c143713d862de37bf00058a3555f44bddf112b472586238d2b667863d0ad5f2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9c0b1e63265154d60ce2a61323a978d65157379ef8131a1e6f96825c7c76ca11
 
 build:
   number: 0
@@ -16,7 +16,7 @@ build:
   entry_points:
     - lb-run=LbEnv.ProjectEnv.script:main
     - lb-completion-helper=LbEnv.Utils.Completion:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
