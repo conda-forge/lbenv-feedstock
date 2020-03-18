@@ -10,7 +10,7 @@ source:
   sha256: 9c0b1e63265154d60ce2a61323a978d65157379ef8131a1e6f96825c7c76ca11
 
 build:
-  number: 0
+  number: 1
   # Can't be noarch due to use of 2to3 in setup.py
   # noarch: python
   entry_points:
