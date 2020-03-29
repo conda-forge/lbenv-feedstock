@@ -28,6 +28,7 @@ requirements:
     - lbplatformutils >=4.2.3
     - python
     - setuptools
+    - six
     - xenv <1.0.0
 
 test:
