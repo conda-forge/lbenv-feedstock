@@ -1,5 +1,5 @@
 {% set name = "LbEnv" %}
-{% set version = "1.1.7" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c0b1e63265154d60ce2a61323a978d65157379ef8131a1e6f96825c7c76ca11
+  sha256: cd92a3731e212df0a547bb6a33ce5a24188805c9c97b662974195e88c5ef31b2
 
 build:
-  number: 1
+  number: 0
   # Can't be noarch due to use of 2to3 in setup.py
   # noarch: python
   entry_points:
@@ -28,6 +28,7 @@ requirements:
     - lbplatformutils >=4.2.3
     - python
     - setuptools
+    - six
     - xenv <1.0.0
 
 test:
