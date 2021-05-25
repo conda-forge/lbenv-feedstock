@@ -1,5 +1,5 @@
 {% set name = "LbEnv" %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c071280efb7740d0d326381116398a8a21ab1f1423c70bb14fde1ef8a688e509
+  sha256: cf06bcbbb2d289aa8e6cd17c2e685a77f3d4f9e8cbd3aa9f07fffc0a434483e3
 
 build:
-  number: 1
+  number: 0
   # Can't be noarch due to use of 2to3 in setup.py
   # noarch: python
   entry_points:
