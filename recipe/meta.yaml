@@ -22,7 +22,7 @@ requirements:
   host:
     - pip
     - python
-    - setuptools_scm
+    - setuptools_scm <6
     - nose
   run:
     - lbplatformutils >=4.2.3
