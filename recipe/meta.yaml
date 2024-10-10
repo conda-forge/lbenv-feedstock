@@ -1,4 +1,4 @@
-{% set name = "LbEnv" %}
+{% set name = "lbenv" %}
 {% set version = "2.2.3" %}
 
 package:
