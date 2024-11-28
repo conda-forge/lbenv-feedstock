@@ -1,13 +1,13 @@
 {% set name = "lbenv" %}
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 668ffdad201291169e23fcf5b72b1ad86b90584a9a964699c28e3eaeabdc1181
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b849d59f9b16e2790a008d13a196a16394a4fa847ca8829ef273a5b2d6561d6a
 
 build:
   entry_points:
