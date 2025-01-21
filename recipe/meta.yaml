@@ -1,5 +1,5 @@
 {% set name = "lbenv" %}
-{% set version = "2.2.4" %}
+{% set version = "2.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b849d59f9b16e2790a008d13a196a16394a4fa847ca8829ef273a5b2d6561d6a
+  sha256: 9ccc0f845fcd91bf03724e635ac1baeace0ab8818e2cd6d6c1fc5bba000bd054
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - lb-completion-helper = LbEnv.Utils.Completion:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
