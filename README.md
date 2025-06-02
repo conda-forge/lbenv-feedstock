@@ -1,7 +1,7 @@
 About lbenv-feedstock
 =====================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tmpl7rvh8pc-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbenv-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.cern.ch/lhcb-core/LbEnv
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tmpl7rvh8pc-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7541&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lbenv-feedstock?branchName=main">
       </a>
     </td>
   </tr>
