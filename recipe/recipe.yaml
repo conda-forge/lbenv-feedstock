@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbenv
-  version: 2.3.0
+  version: "2.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 1a54d7576ccdbede25590456a941dce267ba08550c9f1a72d30aa54b737d8dc2
+  sha256: 007aa8df59c14619cfe9b03ace18e4ffdfacb7f3592229e8bc64791df96d9edf
 
 build:
   number: 0
