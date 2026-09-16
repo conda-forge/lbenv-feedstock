@@ -40,7 +40,9 @@ tests:
         - LbEnv
         - LbEnv.ProjectEnv
         - LbEnv.Utils
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - pip
@@ -62,3 +64,6 @@ extra:
   recipe-maintainers:
     - pikacic
     - chrisburr
+    # opens the version bump PR from LbEnv's CI; a maintainer because both
+    # opening it and labelling it automerge need write access here
+    - LHCbBot
