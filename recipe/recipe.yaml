@@ -40,7 +40,9 @@ tests:
         - LbEnv
         - LbEnv.ProjectEnv
         - LbEnv.Utils
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - pip

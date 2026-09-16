@@ -6,6 +6,8 @@ build_platform:
 conda_forge_output_validation: true
 bot:
   automerge: true
+  # grayskull only: LbEnv is pure Python, so source inspection adds nothing
+  inspection: update-grayskull
 conda_build:
   pkg_format: '2'
 test: native_and_emulated
